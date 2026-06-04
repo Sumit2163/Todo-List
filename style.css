@@ -1,8 +1,9 @@
-body{
-    font-family:  Helvetica, sans-serif;
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 15px;
 }
 
-.main-head{
+.main-head {
     font-weight: bold;
     font-size: 2rem;
 }
@@ -11,50 +12,79 @@ body{
 .todo-grid-input {
     display: grid;
     grid-template-columns: 210px 160px 100px;
-    gap: 10px 10px;
+    gap: 10px;
     align-items: center;
 }
 
-.todo-grid-input{
+.todo-grid-input {
     margin-bottom: 10px;
     align-items: stretch;
 }
 
 .text-input,
-.date-input{
+.date-input {
     padding: 10px;
     font-size: 17px;
 }
 
-.add-btn{
+.add-btn {
     border: none;
     padding: 10px;
     font-size: 17px;
     background-color: green;
     color: white;
+    cursor: pointer;
 }
 
 .js-todo-text,
-.js-todo-date{
+.js-todo-date {
     font-size: 17px;
     margin-left: 5px;
 }
 
-.delete-btn{
+.delete-btn {
     background-color: darkred;
     color: white;
     padding: 10px;
     font-size: 17px;
     border: none;
+    cursor: pointer;
 }
 
-@media screen and (max-width: 390px) {
-    .todo-grid-output,
-    .todo-grid-input {
-        grid-template-columns: 150px 110px 70px;
-        gap: 5px;
+/* Mobile */
+@media (max-width: 600px) {
+
+    .main-head {
+        font-size: 1.7rem;
+        text-align: center;
     }
-    .add-btn{
-        /* margin-left: 5px; */
+
+    .todo-grid-input {
+        grid-template-columns: 1fr;
+    }
+
+    .text-input,
+    .date-input,
+    .add-btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .todo-grid-output {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+    }
+
+    .delete-btn {
+        width: 100%;
+    }
+
+    .js-todo-text,
+    .js-todo-date {
+        margin-left: 0;
     }
 }

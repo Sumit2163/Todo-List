@@ -51,10 +51,10 @@ body{
 @media screen and (max-width: 390px) {
     .todo-grid-output,
     .todo-grid-input {
-        grid-template-columns: 140px 50px 70px;
+        grid-template-columns: 150px 110px 70px;
         gap: 5px;
     }
     .add-btn{
-        margin-left: 5px;
+        /* margin-left: 5px; */
     }
 }

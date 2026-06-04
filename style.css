@@ -51,6 +51,6 @@ body{
 @media screen and (max-width: 390px) {
     .todo-grid-output,
     .todo-grid-input {
-        grid-template-columns: 200px 100px 90px;
+        grid-template-columns: 150px 100px 70px;
     }
 }
